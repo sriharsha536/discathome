@@ -1,1 +1,16 @@
-<h3>Disc-At-Home</h3>
+<div class="jumbotron">
+  <a
+    *ngIf="currentUser"
+    class="nav-item nav-link"
+    style="cursor: pointer;"
+    (click)="logout()"
+    >Logout</a
+  >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

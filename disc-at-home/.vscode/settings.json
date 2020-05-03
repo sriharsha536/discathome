@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "OdeToCodeDB",
+            "dialect": "MSSQL",
+            "name": "local",
+            "password": "<YourStrong@Passw0rd>",
+            "port": 1433,
+            "server": "localhost",
+            "username": "sa"
+        }
+    ]
+}
