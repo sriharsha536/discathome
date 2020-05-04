@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dvdrentalapi:
+    image: ${DOCKER_REGISTRY-}dvdrentalapi
+    build:
+      context: .
+      dockerfile: DVDRentalAPI/Dockerfile

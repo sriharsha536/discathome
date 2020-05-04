@@ -39,7 +39,8 @@ namespace DVDRentalAPI.Core.Model
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=false;");
+                //optionsBuilder.UseSqlServer("Server=localhost,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=false;");
+                optionsBuilder.UseSqlServer("Server=172.17.0.2,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=True;");
             }
         }
 

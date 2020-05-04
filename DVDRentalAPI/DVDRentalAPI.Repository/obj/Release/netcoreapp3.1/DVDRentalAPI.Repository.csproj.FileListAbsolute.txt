@@ -1,0 +1,12 @@
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/bin/Release/netcoreapp3.1/DVDRentalAPI.Repository.deps.json
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/bin/Release/netcoreapp3.1/DVDRentalAPI.Repository.dll
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/bin/Release/netcoreapp3.1/DVDRentalAPI.Repository.pdb
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/bin/Release/netcoreapp3.1/DVDRentalAPI.Core.dll
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/bin/Release/netcoreapp3.1/DVDRentalAPI.Core.pdb
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/Release/netcoreapp3.1/DVDRentalAPI.Repository.csprojAssemblyReference.cache
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/Release/netcoreapp3.1/DVDRentalAPI.Repository.csproj.CoreCompileInputs.cache
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/Release/netcoreapp3.1/DVDRentalAPI.Repository.AssemblyInfoInputs.cache
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/Release/netcoreapp3.1/DVDRentalAPI.Repository.AssemblyInfo.cs
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/Release/netcoreapp3.1/DVDRentalAPI.Repository.csproj.CopyComplete
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/Release/netcoreapp3.1/DVDRentalAPI.Repository.dll
+/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/Release/netcoreapp3.1/DVDRentalAPI.Repository.pdb

@@ -1,21 +1,48 @@
-﻿<Properties StartupConfiguration="{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}|Default">
+﻿<Properties StartupConfiguration="{F7DB553A-2755-4BE5-930B-679E4F818701}|Default">
   <MonoDevelop.Ide.ItemProperties.DVDRentalAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DVDRentalAPI/DVDRentalAPI.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DVDRentalAPI/Readme.md">
     <Files>
-      <File FileName="DVDRentalAPI/DVDRentalAPI.csproj" Line="41" Column="1" />
+      <File FileName="DVDRentalAPI.Services/UserService.cs" Line="38" Column="1" />
+      <File FileName="DVDRentalAPI/Controllers/AuthController.cs" Line="30" Column="1" />
+      <File FileName="DVDRentalAPI.Repository/Repository/UnitOfWork.cs" Line="32" Column="1" />
+      <File FileName="DVDRentalAPI.Core/Model/DVDRentalContext.cs" Line="43" Column="68" />
+      <File FileName="docker-compose.override.yml" Line="11" Column="40" />
+      <File FileName="DVDRentalAPI/Dockerfile" Line="10" Column="28" />
+      <File FileName="DVDRentalAPI/Readme.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="DVDRentalAPI" expanded="True" selected="True" />
+          <Node name="DVDRentalAPI" expanded="True">
+            <Node name="docker-compose" expanded="True">
+              <Node name="docker-compose.yml" expanded="True" />
+            </Node>
+            <Node name="DVDRentalAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="DVDRentalAPI.Core" expanded="True">
+              <Node name="Model" expanded="True" />
+            </Node>
+            <Node name="DVDRentalAPI.Repository" expanded="True">
+              <Node name="Repository" expanded="True" />
+            </Node>
+            <Node name="DVDRentalAPI.Services" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>docker-compose.dcproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="38" column="1" />
+      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="41" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
