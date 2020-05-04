@@ -14,7 +14,7 @@
         "outputPath": "/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sriharshavardhandevarakonda/.config/NuGet/NuGet.Config"
+          "/Users/sriharshavardhandevarakonda/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -76,7 +76,7 @@
         "outputPath": "/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sriharshavardhandevarakonda/.config/NuGet/NuGet.Config"
+          "/Users/sriharshavardhandevarakonda/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

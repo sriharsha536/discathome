@@ -5259,7 +5259,7 @@
       "outputPath": "/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sriharshavardhandevarakonda/.config/NuGet/NuGet.Config"
+        "/Users/sriharshavardhandevarakonda/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
