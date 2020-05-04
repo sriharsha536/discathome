@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DVDRentalAPI.Core\DVDRentalAPI.Core.csproj" />
+    <ProjectReference Include="..\DVDRentalAPI.Helpers\DVDRentalAPI.Helpers.csproj" />
+    <ProjectReference Include="..\DVDRentalAPI.Repository\DVDRentalAPI.Repository.csproj" />
+    <ProjectReference Include="..\DVDRentalAPI.Models\DVDRentalAPI.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Profiles\" />
+  </ItemGroup>
+</Project>

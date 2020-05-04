@@ -10,4 +10,5 @@ export class Register {
   city: string;
   state: string;
   zipCode: string;
+  jwtToken: string;
 }

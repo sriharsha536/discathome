@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}|Default">
+  <MonoDevelop.Ide.ItemProperties.DVDRentalAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DVDRentalAPI/DVDRentalAPI.csproj">
+    <Files>
+      <File FileName="DVDRentalAPI/DVDRentalAPI.csproj" Line="41" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DVDRentalAPI" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,47 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRentalAPI", "DVDRentalAPI\DVDRentalAPI.csproj", "{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRentalAPI.Core", "DVDRentalAPI.Core\DVDRentalAPI.Core.csproj", "{B81FCF27-1DEB-47AD-A186-192A9A37F734}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRentalAPI.Repository", "DVDRentalAPI.Repository\DVDRentalAPI.Repository.csproj", "{1A3BD209-DDBE-4D28-B5FD-6CF8B92D5CF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRentalAPI.Services", "DVDRentalAPI.Services\DVDRentalAPI.Services.csproj", "{2453D0D0-0495-4F38-A834-9B16E6A91F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRentalAPI.Helpers", "DVDRentalAPI.Helpers\DVDRentalAPI.Helpers.csproj", "{0EB95B00-F73F-465C-815F-31FE455E75CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRentalAPI.Models", "DVDRentalAPI.Models\DVDRentalAPI.Models.csproj", "{816EF552-7483-4CF9-A044-73BEEC503FD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81FCF27-1DEB-47AD-A186-192A9A37F734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81FCF27-1DEB-47AD-A186-192A9A37F734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81FCF27-1DEB-47AD-A186-192A9A37F734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81FCF27-1DEB-47AD-A186-192A9A37F734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A3BD209-DDBE-4D28-B5FD-6CF8B92D5CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A3BD209-DDBE-4D28-B5FD-6CF8B92D5CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A3BD209-DDBE-4D28-B5FD-6CF8B92D5CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3BD209-DDBE-4D28-B5FD-6CF8B92D5CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2453D0D0-0495-4F38-A834-9B16E6A91F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2453D0D0-0495-4F38-A834-9B16E6A91F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2453D0D0-0495-4F38-A834-9B16E6A91F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2453D0D0-0495-4F38-A834-9B16E6A91F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB95B00-F73F-465C-815F-31FE455E75CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB95B00-F73F-465C-815F-31FE455E75CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB95B00-F73F-465C-815F-31FE455E75CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB95B00-F73F-465C-815F-31FE455E75CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816EF552-7483-4CF9-A044-73BEEC503FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816EF552-7483-4CF9-A044-73BEEC503FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816EF552-7483-4CF9-A044-73BEEC503FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816EF552-7483-4CF9-A044-73BEEC503FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
