@@ -17,13 +17,13 @@
     <ProjectReference Include="..\DVDRentalAPI.Repository\DVDRentalAPI.Repository.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
-    <ProjectReference Include="..\DVDRentalAPI.Helpers\DVDRentalAPI.Helpers.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\DVDRentalAPI.Services\DVDRentalAPI.Services.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\DVDRentalAPI.Models\DVDRentalAPI.Models.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\DVDRentalAPI.Helpers\DVDRentalAPI.Helpers.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
