@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { DataService } from 'src/app/_services/data/data.service';
 
 import { UserService } from 'src/app/_services/user/user.service';
 
@@ -14,11 +15,14 @@ export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
   loading = false;
   submitted = false;
+  states: {};
+  cities: {};
 
   constructor(
     private formbuilder: FormBuilder,
     private router: Router,
     private userService: UserService,
+    private dataService: DataService,
     private toastr: ToastrService
   ) {}
 
@@ -36,6 +40,8 @@ export class RegisterComponent implements OnInit {
       state: ['', [Validators.required]],
       zipCode: ['', [Validators.required]],
     });
+
+    this.dataService.getStates().subscribe((data) => (this.states = data));
   }
 
   get fval() {
@@ -59,5 +65,15 @@ export class RegisterComponent implements OnInit {
         this.loading = false;
       }
     );
+  }
+
+  onChangeState(stateId: number) {
+    if (stateId) {
+      this.dataService.getCities(stateId).subscribe((data) => {
+        this.cities = data;
+      });
+    } else {
+      this.cities = {};
+    }
   }
 }

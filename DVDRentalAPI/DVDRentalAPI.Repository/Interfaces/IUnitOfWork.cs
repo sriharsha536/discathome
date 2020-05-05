@@ -26,6 +26,6 @@ namespace DVDRentalAPI.Repository.Interfaces
         IUserRepository Users { get; }
         IWriterRepository Writers { get; }
 
-        void Commit();
+        bool Commit();
     }
 }

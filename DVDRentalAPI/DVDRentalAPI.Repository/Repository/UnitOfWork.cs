@@ -50,16 +50,9 @@ namespace DVDRentalAPI.Repository.Repository
             Writers = new WriterRepository(Context);
         }
 
-        public void Commit()
+        public bool Commit()
         {
-            try
-            {
-                Context.SaveChanges();
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.InnerException.Message); ;
-            }
+            return Context.SaveChanges() > 0;
         }
 
         public void Dispose()

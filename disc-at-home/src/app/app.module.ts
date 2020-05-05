@@ -8,6 +8,7 @@ import { ToastrModule } from 'ngx-toastr';
 //Services
 import { InterceptorService } from "./_services/interceptor/interceptor.service";
 import { UserService } from "./_services/user/user.service";
+import { DataService } from "./_services/data/data.service";
 
 // Components
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +33,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserAnimationsModule,
     ToastrModule.forRoot()
   ],
-  providers: [UserService, {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}],
+  providers: [UserService, DataService, {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

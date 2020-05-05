@@ -1,5 +1,4 @@
 ﻿using System;
-using AutoMapper;
 using DVDRentalAPI.Models;
 using DVDRentalAPI.Services;
 using Microsoft.AspNetCore.Authorization;

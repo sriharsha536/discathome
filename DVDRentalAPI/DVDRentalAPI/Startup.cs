@@ -6,6 +6,8 @@ using DVDRentalAPI.Helpers;
 using DVDRentalAPI.Repository.Interfaces;
 using DVDRentalAPI.Repository.Repository;
 using DVDRentalAPI.Services;
+using DVDRentalAPI.Services.Interfaces;
+using DVDRentalAPI.Services.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -89,6 +91,7 @@ namespace DVDRentalAPI
             // configure DI for application services
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICSCService, CSCService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

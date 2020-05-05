@@ -155,38 +155,29 @@
         </div>
 
         <div class="form-group row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
+            <label for="state">State</label>
+            <select formControlName="state" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.state.errors }" (change)="onChangeState($event.target.value)">
+              <option value="">Select State...</option>
+              <option *ngFor="let state of states" [value]="state.stateId">{{state.stateName}}</option>
+            </select>
+            <div *ngIf="submitted && fval.state.errors" class="invalid-feedback">
+              <div *ngIf="fval.state.errors.required">State is required</div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
             <label for="city">City</label>
-            <input
-              type="text"
-              formControlName="city"
-              class="form-control"
-              [ngClass]="{ 'is-invalid': submitted && fval.city.errors }"
-              placeholder="Enter City Here"
-            />
+            <select formControlName="city" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.city.errors }">
+              <option value="">Select City...</option>
+              <option *ngFor="let city of cities" [value]="city.cityId">{{city.cityName}}</option>
+            </select>
             <div *ngIf="submitted && fval.city.errors" class="invalid-feedback">
               <div *ngIf="fval.city.errors.required">City is required</div>
             </div>
           </div>
 
-          <div class="col-sm-3">
-            <label for="state">State</label>
-            <input
-              type="text"
-              formControlName="state"
-              class="form-control"
-              [ngClass]="{ 'is-invalid': submitted && fval.state.errors }"
-              placeholder="Enter State Here"
-            />
-            <div
-              *ngIf="submitted && fval.state.errors"
-              class="invalid-feedback"
-            >
-              <div *ngIf="fval.state.errors.required">State is required</div>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <label for="zipCode">ZipCode</label>
             <input
               type="text"

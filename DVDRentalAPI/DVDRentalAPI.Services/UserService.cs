@@ -76,7 +76,9 @@ namespace DVDRentalAPI.Services
         {
             var user = _mapper.Map<Users>(model);
 
-            return false;
+            _unitOfWork.Users.Add(user);
+
+            return _unitOfWork.Commit();
         }
     }
 }
