@@ -14,21 +14,14 @@ namespace DVDRentalAPI.Services.Profiles
                 {
                     StreetName = src.StreetName,
                     AptNumber = src.AptNo,
-                    City = new City
-                    {
-                        CityName = src.City,
-                        State = new State
-                        {
-                            StateName = src.State,
-                            CountryId = 1,
-                            LastUpdatedBy = DateTime.UtcNow
-                        },
-                        LastUpdatedBy = DateTime.UtcNow
-                    },
+                    CityId = Convert.ToInt32(src.City),
+                    StateId = Convert.ToInt32(src.State),
                     ZipCode = src.ZipCode
                 }))
                 .ForMember(dest => dest.IsActive, opt => opt.MapFrom(src => true))
                 .ForMember(dest => dest.LastUpdatedBy, opt => opt.MapFrom(src => DateTime.UtcNow));
+
+            CreateMap<Users, UserModel>();
         }
     }
 }

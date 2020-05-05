@@ -28,14 +28,16 @@ namespace DVDRentalAPI.Core.Model
         public int? CityId { get; set; }
         [Required]
         [StringLength(50)]
-        public string State { get; set; }
-        [Required]
-        [StringLength(50)]
         public string ZipCode { get; set; }
+        [Column("State_Id")]
+        public int? StateId { get; set; }
 
         [ForeignKey(nameof(CityId))]
         [InverseProperty("Address")]
         public virtual City City { get; set; }
+        [ForeignKey(nameof(StateId))]
+        [InverseProperty("Address")]
+        public virtual State State { get; set; }
         [InverseProperty("Address")]
         public virtual ICollection<Store> Store { get; set; }
         [InverseProperty("Address")]

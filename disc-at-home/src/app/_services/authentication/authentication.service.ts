@@ -33,8 +33,8 @@ export class AuthenticationService {
       .post<any>(this.baseUrl + 'auth/login', { userName: email, password })
       .pipe(
         map((user) => {
-          if (user && user.token) {
-            localStorage.setItem('currentUser', JSON.stringify(user.result));
+          if (user && user.jwtToken) {
+            localStorage.setItem('currentUser', JSON.stringify(user));
             this.currentUserSubject.next(user);
           }
           return user;

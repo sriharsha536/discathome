@@ -16,7 +16,7 @@ namespace DVDRentalAPI.Services
 {
     public interface IUserService
     {
-        Users Authenticate(string userName, string password);
+        UserModel Authenticate(string userName, string password);
         IEnumerable<Users> GetAll();
         bool Register(UserModel model);
     }
@@ -33,8 +33,9 @@ namespace DVDRentalAPI.Services
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
-        public Users Authenticate(string username, string password)
+        public UserModel Authenticate(string username, string password)
         {
+            UserModel userModel = null;
             var user = _unitOfWork.Users.Find(x => x.UserName == username && x.Password == password).FirstOrDefault();
 
             // return null if user not found
@@ -51,6 +52,10 @@ namespace DVDRentalAPI.Services
             //    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             //};
 
+            //Map Data Entity to Model
+            userModel = _mapper.Map<UserModel>(user);
+
+
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
@@ -63,8 +68,8 @@ namespace DVDRentalAPI.Services
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            user.Jwttoken = tokenHandler.WriteToken(token);
-            return user;
+            userModel.JwtToken = tokenHandler.WriteToken(token);
+            return userModel;
         }
 
         public IEnumerable<Users> GetAll()

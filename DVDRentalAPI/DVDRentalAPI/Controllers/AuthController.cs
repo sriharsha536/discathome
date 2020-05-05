@@ -26,12 +26,12 @@ namespace DVDRentalAPI.Controllers
         [ProducesDefaultResponseType]
         public IActionResult Login([FromBody]AuthenticationModel model)
         {
-            var user = _userService.Authenticate(model.UserName, model.Password);
+            var userModel = _userService.Authenticate(model.UserName, model.Password);
 
-            if (user == null)
+            if (userModel == null)
                 return BadRequest(new { message = "UserName or password is incorrect" });
 
-            return Ok(user);
+            return Ok(userModel);
         }
 
         [AllowAnonymous]

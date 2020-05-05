@@ -41,9 +41,6 @@ namespace DVDRentalAPI.Core.Model
         public string Password { get; set; }
         [Column("Last_Updated_By", TypeName = "datetime")]
         public DateTime LastUpdatedBy { get; set; }
-        [Required]
-        [Column("JWTToken")]
-        public string Jwttoken { get; set; }
 
         [ForeignKey(nameof(AddressId))]
         [InverseProperty("Users")]
