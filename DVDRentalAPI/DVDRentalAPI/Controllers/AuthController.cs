@@ -35,6 +35,7 @@ namespace DVDRentalAPI.Controllers
             return Ok(user);
         }
 
+        [AllowAnonymous]
         [HttpPost("register")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestObjectResult), StatusCodes.Status400BadRequest)]

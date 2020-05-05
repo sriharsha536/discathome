@@ -30,7 +30,7 @@ export class AuthenticationService {
 
   login(email: string, password: string) {
     return this.http
-      .post<any>(this.baseUrl + 'auth/login', { email, password })
+      .post<any>(this.baseUrl + 'auth/login', { userName: email, password })
       .pipe(
         map((user) => {
           if (user && user.token) {

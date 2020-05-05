@@ -1,30 +1,28 @@
 ﻿<Properties StartupConfiguration="{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}|Default">
   <MonoDevelop.Ide.ItemProperties.DVDRentalAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DVDRentalAPI.Helpers/AppSettings.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DVDRentalAPI/Startup.cs">
     <Files>
-      <File FileName="DVDRentalAPI.Models/UserModel.cs" Line="1" Column="1" />
-      <File FileName="DVDRentalAPI.Models/AuthenticationModel.cs" Line="1" Column="1" />
-      <File FileName="DVDRentalAPI.Helpers/AppSettings.cs" Line="1" Column="1" />
-      <File FileName="DVDRentalAPI.Services/Profiles/UserProfile.cs" Line="3" Column="20" />
-      <File FileName="DVDRentalAPI.Helpers/.DS_Store" Line="1" Column="1" />
+      <File FileName="DVDRentalAPI.Services/UserService.cs" Line="79" Column="1" />
+      <File FileName="DVDRentalAPI/Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DVDRentalAPI" expanded="True">
             <Node name="DVDRentalAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+            <Node name="DVDRentalAPI.Models" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
-                <Node name="ProjectDependencies" expanded="True" />
               </Node>
             </Node>
-            <Node name="DVDRentalAPI.Helpers" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="AppSettings.cs" selected="True" />
+            <Node name="DVDRentalAPI.Services" expanded="True">
+              <Node name="Profiles" expanded="True" />
             </Node>
-            <Node name="DVDRentalAPI.Services" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -38,8 +36,10 @@
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="38" column="1" />
-      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="41" column="1" />
+      <Breakpoint enabled="false" file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="38" column="1" />
+      <Breakpoint enabled="false" file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="41" column="1" />
+      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="77" column="1" />
+      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/UserService.cs" relfile="DVDRentalAPI.Services/UserService.cs" line="81" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

@@ -8,7 +8,19 @@ namespace DVDRentalAPI.Services.Profiles
     {
         public UserProfile()
         {
-            CreateMap<Users, UserModel>();
+            CreateMap<UserModel, Users>()
+                .ForMember(dest => dest.Address, opt => opt.MapFrom(src => new Address {
+                    StreetName = src.StreetName,
+                    AptNumber = src.AptNo,
+                    City = new City {
+                        CityName = src.City,
+                        State = new State
+                        {
+                            StateName = src.State,
+                        }
+                    },
+                    ZipCode = src.ZipCode
+                }));
         }
     }
 }

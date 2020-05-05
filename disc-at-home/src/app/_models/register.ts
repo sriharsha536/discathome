@@ -3,7 +3,7 @@ export class Register {
   lastName: string;
   userName: string;
   password: string;
-  email: string;
+  emailId: string;
   contactNo: string;
   streetName: string;
   aptNo: string;

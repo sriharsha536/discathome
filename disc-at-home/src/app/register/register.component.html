@@ -78,20 +78,20 @@
 
         <div class="form-group row">
           <div class="col-sm-6">
-            <label for="email">Email</label>
+            <label for="emailId">Email</label>
             <input
               type="text"
-              formControlName="email"
+              formControlName="emailId"
               class="form-control"
-              [ngClass]="{ 'is-invalid': submitted && fval.email.errors }"
-              placeholder="Enter email here"
+              [ngClass]="{ 'is-invalid': submitted && fval.emailId.errors }"
+              placeholder="Enter emailId here"
             />
             <div
-              *ngIf="submitted && fval.email.errors"
+              *ngIf="submitted && fval.emailId.errors"
               class="invalid-feedback"
             >
-              <div *ngIf="fval.email.errors.required">Email is required</div>
-              <div *ngIf="fval.email.errors.email">
+              <div *ngIf="fval.emailId.errors.required">Email is required</div>
+              <div *ngIf="fval.emailId.errors.email">
                 Enter valid email address
               </div>
             </div>
