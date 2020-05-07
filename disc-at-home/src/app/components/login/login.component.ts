@@ -8,7 +8,7 @@ import {
 } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 
-import { AuthenticationService } from '../_services/authentication/authentication.service';
+import { AuthenticationService } from '../../_services/authentication/authentication.service';
 
 @Component({
   selector: 'app-login',
