@@ -40,7 +40,6 @@ namespace DVDRentalAPI.Core.Model
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Server=localhost,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=false;");
-                //optionsBuilder.UseSqlServer("Server=172.17.0.2,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=True;");
             }
         }
 
@@ -57,6 +56,11 @@ namespace DVDRentalAPI.Core.Model
                     .WithMany(p => p.Address)
                     .HasForeignKey(d => d.CityId)
                     .HasConstraintName("FK__Address__City_Id__49C3F6B7");
+
+                entity.HasOne(d => d.State)
+                    .WithMany(p => p.Address)
+                    .HasForeignKey(d => d.StateId)
+                    .HasConstraintName("FK__Address__State_I__3A4CA8FD");
             });
 
             modelBuilder.Entity<City>(entity =>

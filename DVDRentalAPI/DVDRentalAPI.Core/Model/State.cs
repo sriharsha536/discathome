@@ -9,6 +9,7 @@ namespace DVDRentalAPI.Core.Model
     {
         public State()
         {
+            Address = new HashSet<Address>();
             City = new HashSet<City>();
         }
 
@@ -31,6 +32,8 @@ namespace DVDRentalAPI.Core.Model
         [ForeignKey(nameof(CountryId))]
         [InverseProperty("State")]
         public virtual Country Country { get; set; }
+        [InverseProperty("State")]
+        public virtual ICollection<Address> Address { get; set; }
         [InverseProperty("State")]
         public virtual ICollection<City> City { get; set; }
     }
