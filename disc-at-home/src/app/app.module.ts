@@ -1,14 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule }   from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatFormFieldModule } from "@angular/material/form-field";
 import { ToastrModule } from 'ngx-toastr';
 
 //Services
-import { InterceptorService } from "./_services/interceptor/interceptor.service";
-import { UserService } from "./_services/user/user.service";
-import { DataService } from "./_services/data/data.service";
+import { InterceptorService } from './_services/interceptor/interceptor.service';
+import { UserService } from './_services/user/user.service';
+import { DataService } from './_services/data/data.service';
 
 // Components
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +21,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,7 @@ import { HeaderComponent } from './components/header/header.component';
     RegisterComponent,
     DashboardComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +36,15 @@ import { HeaderComponent } from './components/header/header.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    ToastrModule.forRoot(),
   ],
-  providers: [UserService, DataService, {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}],
-  bootstrap: [AppComponent]
+  providers: [
+    UserService,
+    DataService,
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
