@@ -1,0 +1,17 @@
+<div class="form-group">
+  <input
+    type="search"
+    class="form-control"
+    placeholder="Enter Movie Name.."
+    [formControl]="searchField"
+  />
+</div>
+<div class="text-center">
+  <p class="lead" *ngIf="loading">Loading...</p>
+</div>
+<ul class="list-group" >
+  <li class="list-group-item" *ngFor="let movie of moviesResult | async">
+    <img style="width: 64px; height: 64px;" src="{{ movie.poster }}" />
+    <a target="_blank" href="#">{{ movie.movieName }} </a>
+  </li>
+</ul>

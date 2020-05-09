@@ -2,3 +2,10 @@ ul li a{
 color: white;
 padding: 16px 8px 0px 0px;
 }
+.input {
+  color: transparent;
+}
+
+.list-group .list-group-item a{
+color: black;
+}
