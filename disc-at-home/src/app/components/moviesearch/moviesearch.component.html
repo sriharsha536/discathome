@@ -1,17 +1,14 @@
-<div class="form-group">
+<div class="form-group m-0" style="z-index: 301;position: relative;">
   <input
     type="search"
     class="form-control"
     placeholder="Enter Movie Name.."
     [formControl]="searchField"
   />
+  <ul class="list-group rounded enablescroll" style="position: absolute; width: 100%;">
+    <li class="list-group-item p-0" *ngFor="let movie of moviesResult | async">
+      <img style="width: 64px; height: 64px; float: left;" src="{{ movie.poster }}" />
+      <a target="_blank" href="#">{{ movie.movieName }} </a>
+    </li>
+  </ul>
 </div>
-<div class="text-center">
-  <p class="lead" *ngIf="loading">Loading...</p>
-</div>
-<ul class="list-group" >
-  <li class="list-group-item" *ngFor="let movie of moviesResult | async">
-    <img style="width: 64px; height: 64px;" src="{{ movie.poster }}" />
-    <a target="_blank" href="#">{{ movie.movieName }} </a>
-  </li>
-</ul>

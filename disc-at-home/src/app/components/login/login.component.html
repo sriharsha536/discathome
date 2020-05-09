@@ -5,15 +5,15 @@
       <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
         <div class="form-group row pt-3">
           <div class="col-md-1 pt-2">
-            <label for="email">Email</label>
+            <label for="email">UserName</label>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 m-1">
             <input
               type="text"
               formControlName="email"
               class="form-control"
               [ngClass]="{ 'is-invalid': submitted && fval.email.errors }"
-              placeholder="Enter email here"
+              placeholder="Enter user name"
             />
             <div
               *ngIf="submitted && fval.email.errors"
@@ -30,7 +30,7 @@
           <div class="col-md-1 pt-2">
             <label for="password">Password</label>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 m-1">
             <input
               type="password"
               formControlName="password"
