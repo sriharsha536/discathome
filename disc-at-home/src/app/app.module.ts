@@ -25,6 +25,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MoviesearchComponent } from './components/moviesearch/moviesearch.component';
+import { LoadusercontrolComponent } from './components/loadusercontrol/loadusercontrol.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { MoviesearchComponent } from './components/moviesearch/moviesearch.compo
     HeaderComponent,
     FooterComponent,
     MoviesearchComponent,
+    LoadusercontrolComponent,
   ],
   imports: [
     BrowserModule,

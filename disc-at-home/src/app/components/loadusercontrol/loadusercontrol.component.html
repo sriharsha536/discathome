@@ -1,0 +1,21 @@
+  <ul class="list-unstyled list-inline m-0">
+    <li class="list-inline-item m-2">
+      <img src="assets/images/login.png" alt="login" class="iconimage" />
+    </li>
+    <li class="list-inline-item m-2">
+      <img
+        src="assets/images/shopping-cart.png"
+        alt="login"
+        class="iconimage"
+      />
+    </li>
+    <li class="list-inline-item">
+      <a
+        *ngIf="currentUser"
+        class="nav-item nav-link"
+        style="cursor: pointer;"
+        (click)="logout()"
+        >Logout</a
+      >
+    </li>
+  </ul>

@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{43794FAF-5686-427A-AC4C-0D6CBA0A2FC7}|Default">
   <MonoDevelop.Ide.ItemProperties.DVDRentalAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DVDRentalAPI.Services/Services/MovieService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DVDRentalAPI/Controllers/MoviesController.cs">
     <Files>
       <File FileName="DVDRentalAPI.Repository/Repository/GenericRepository.cs" Line="49" Column="1" />
-      <File FileName="DVDRentalAPI/Controllers/MoviesController.cs" Line="20" Column="1" />
-      <File FileName="DVDRentalAPI/Controllers/StatesController.cs" Line="9" Column="20" />
-      <File FileName="DVDRentalAPI.Services/Services/MovieService.cs" Line="26" Column="68" />
+      <File FileName="DVDRentalAPI/Controllers/MoviesController.cs" Line="14" Column="42" />
+      <File FileName="DVDRentalAPI/Controllers/StatesController.cs" />
+      <File FileName="DVDRentalAPI.Services/Services/MovieService.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DVDRentalAPI" expanded="True">
             <Node name="DVDRentalAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="MoviesController.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="DVDRentalAPI.Core" expanded="True">
               <Node name="Model" expanded="True" />
@@ -21,9 +23,7 @@
             <Node name="DVDRentalAPI.Services" expanded="True">
               <Node name="Interfaces" expanded="True" />
               <Node name="Profiles" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="MovieService.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -35,9 +35,8 @@
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI/Controllers/MoviesController.cs" relfile="DVDRentalAPI/Controllers/MoviesController.cs" line="20" column="1" />
-      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/Services/MovieService.cs" relfile="DVDRentalAPI.Services/Services/MovieService.cs" line="27" column="1" />
-      <Breakpoint file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/Services/MovieService.cs" relfile="DVDRentalAPI.Services/Services/MovieService.cs" line="26" column="1" />
+      <Breakpoint enabled="false" file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/Services/MovieService.cs" relfile="DVDRentalAPI.Services/Services/MovieService.cs" line="27" column="1" />
+      <Breakpoint enabled="false" file="/Users/sriharshavardhandevarakonda/Desktop/WorkSpaces/DVDRental/DVDRentalAPI/DVDRentalAPI.Services/Services/MovieService.cs" relfile="DVDRentalAPI.Services/Services/MovieService.cs" line="26" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

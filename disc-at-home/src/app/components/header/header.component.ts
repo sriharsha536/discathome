@@ -1,18 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormGroup, FormControl } from '@angular/forms';
 import { DataService } from 'src/app/_services/data/data.service';
 import { Observable } from 'rxjs';
 import {
-  startWith,
-  map,
   debounceTime,
   tap,
   switchMap,
-  finalize,
   distinctUntilChanged,
 } from 'rxjs/operators';
 import { Movie } from 'src/app/_models/movie.model';
+import { AuthenticationService } from 'src/app/_services/authentication/authentication.service';
+import { Register } from 'src/app/_models/register';
 
 @Component({
   selector: 'app-header',
@@ -26,7 +24,14 @@ export class HeaderComponent implements OnInit {
   isLoading = false;
   moviesResult: Observable<Movie[]>;
 
-  constructor(private dataService: DataService) {}
+  currentUser: Register;
+  isUserExists: boolean;
+
+  constructor(private dataService: DataService, private authService: AuthenticationService) {
+    this.authService.currentUser.subscribe((data) => {
+        this.currentUser = data;
+    });
+  }
 
   ngOnInit(): void {
     this.searchForm = new FormGroup({});
