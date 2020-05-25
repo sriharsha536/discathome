@@ -24,7 +24,7 @@ namespace DVDRentalAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestObjectResult), StatusCodes.Status400BadRequest)]
         [ProducesDefaultResponseType]
-        public IActionResult Login([FromBody]AuthenticationModel model)
+        public IActionResult Login([FromBody] AuthenticationModel model)
         {
             var userModel = _userService.Authenticate(model.UserName, model.Password);
 
@@ -39,7 +39,7 @@ namespace DVDRentalAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestObjectResult), StatusCodes.Status400BadRequest)]
         [ProducesDefaultResponseType]
-        public IActionResult Register([FromBody]UserModel model)
+        public IActionResult Register([FromBody] UserModel model)
         {
             var result = _userService.Register(model);
 

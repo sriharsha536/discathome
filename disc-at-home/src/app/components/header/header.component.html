@@ -1,33 +1,36 @@
 <nav class="navbar navbar-expand-sm navbar-dark pl-0">
-  <button
-    class="navbar-toggler d-lg-none"
-    type="button"
-    data-toggle="collapse"
-    data-target="#collapsibleNavId"
-    aria-controls="collapsibleNavId"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  ></button>
-  <div class="collapse navbar-collapse" id="collapsibleNavId">
-    <div class="col-sm-6" [className]="currentUser ? 'col-sm-6' : 'col-sm-8'">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link pr-3" routerLink="/dashboard"
-            ><h3>Home</h3>
-            <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link pr-3" routerLink="/register"><h3>About Us</h3></a>
-        </li>
-      </ul>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    ></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <img src="assets/images/site-logo.png" alt="site-logo" style="border-radius: 50%;width: 70px; height: 70px;"/>
+      <div class="col-sm-5" [className]="currentUser ? 'col-sm-5' : 'col-sm-7'">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link pr-3" routerLink="/dashboard"
+              ><h3>Home</h3>
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-3" routerLink="/register"
+              ><h3>About Us</h3></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <app-moviesearch></app-moviesearch>
+      </div>
+      <div class="col-sm-2 p-0" *ngIf="currentUser">
+        <app-loadusercontrol></app-loadusercontrol>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <app-moviesearch></app-moviesearch>
-    </div>
-    <div class="col-sm-2 p-0" *ngIf="currentUser">
-      <app-loadusercontrol></app-loadusercontrol>
-    </div>
-  </div>
 </nav>
 <hr />

@@ -8,7 +8,7 @@ import {
   switchMap,
   distinctUntilChanged,
 } from 'rxjs/operators';
-import { Movie } from 'src/app/_models/movie.model';
+import { MovieSearch } from 'src/app/_models/moviesearch.model';
 import { AuthenticationService } from 'src/app/_services/authentication/authentication.service';
 import { Register } from 'src/app/_models/register';
 
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   searchForm: FormGroup;
   searchBoxCtrl = new FormControl();
   isLoading = false;
-  moviesResult: Observable<Movie[]>;
+  moviesResult: Observable<MovieSearch[]>;
 
   currentUser: Register;
   isUserExists: boolean;

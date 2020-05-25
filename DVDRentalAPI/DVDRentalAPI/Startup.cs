@@ -93,6 +93,7 @@ namespace DVDRentalAPI
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICSCService, CSCService>();
             services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IUploadService, UploadService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

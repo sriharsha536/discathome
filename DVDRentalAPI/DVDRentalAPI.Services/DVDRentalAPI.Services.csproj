@@ -20,4 +20,9 @@
     <ProjectReference Include="..\DVDRentalAPI.Models\DVDRentalAPI.Models.csproj" />
     <ProjectReference Include="..\DVDRentalAPI.Helpers\DVDRentalAPI.Helpers.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Import.MovieDataLibrary">
+      <HintPath>..\..\..\DVDRentalDataImport\Import.MovieData\Import.MovieDataLibrary\bin\Debug\netcoreapp3.1\Import.MovieDataLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

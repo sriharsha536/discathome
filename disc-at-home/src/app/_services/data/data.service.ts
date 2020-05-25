@@ -4,7 +4,7 @@ import { map } from 'rxjs/operators';
 
 import { environment } from "src/environments/environment";
 import { Observable } from 'rxjs';
-import { Movie } from 'src/app/_models/movie.model';
+import { MovieSearch } from 'src/app/_models/moviesearch.model';
 
 @Injectable({
   providedIn: 'root'
@@ -34,8 +34,8 @@ export class DataService {
     );
   }
 
-  getMovies(searchText): Observable<Movie[]>{
-    return this.http.get<Movie[]>(this.baseUrl + 'movies/' + searchText)
+  getMovies(searchText): Observable<MovieSearch[]>{
+    return this.http.get<MovieSearch[]>(this.baseUrl + 'movies/' + searchText)
     .pipe(
       map(movies => {
         return movies;

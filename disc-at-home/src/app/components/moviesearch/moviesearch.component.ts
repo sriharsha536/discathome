@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable , of } from 'rxjs';
-import { Movie } from 'src/app/_models/movie.model';
+import { MovieSearch } from 'src/app/_models/moviesearch.model';
 import { FormControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, tap, switchMap } from 'rxjs/operators';
 import { MovieService } from 'src/app/_services/movie/movie.service';
@@ -12,7 +12,7 @@ import { MovieService } from 'src/app/_services/movie/movie.service';
 })
 export class MoviesearchComponent implements OnInit {
   loading: boolean = false;
-  moviesResult: Observable<Movie[]>;
+  moviesResult: Observable<MovieSearch[]>;
   searchField: FormControl;
   constructor(private movieService: MovieService) { }
 
@@ -27,7 +27,7 @@ export class MoviesearchComponent implements OnInit {
           return this.movieService.getMovies(searchText)
         else {
           this.loading = false;
-          return of<Movie[]>([]);;
+          return of<MovieSearch[]>([]);;
         }
       }),
       tap(_ => (this.loading = false))

@@ -1,0 +1,10 @@
+<a href="#" class="list-group-item clearfix" *ngFor='let movie of movies'>
+  <div class="pull-left">
+    <h4 class="b4-group-item-heading">{{movie.movieName}}</h4>
+    <p class="list-group-item-text">{{movie.imdbRating}}</p>
+    <p class="list-group-item-text">{{movie.imdbRating}}</p>
+  </div>
+  <span class="pull-right">
+    <img src={{movie.poster}} alt="" class="img-responsive" style="max-height: 350px; max-width: 350px;">
+  </span>
+</a>

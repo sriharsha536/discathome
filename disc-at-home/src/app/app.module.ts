@@ -26,6 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MoviesearchComponent } from './components/moviesearch/moviesearch.component';
 import { LoadusercontrolComponent } from './components/loadusercontrol/loadusercontrol.component';
+import { MovieListComponent } from './components/movielist/movielist.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { LoadusercontrolComponent } from './components/loadusercontrol/loaduserc
     FooterComponent,
     MoviesearchComponent,
     LoadusercontrolComponent,
+    MovieListComponent,
+    MovieDetailComponent,
   ],
   imports: [
     BrowserModule,
