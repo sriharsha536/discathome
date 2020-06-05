@@ -26,6 +26,7 @@ namespace DVDRentalAPI.Repository.Repository
         public IStoreRepository Stores { get; }
         public IUserRepository Users { get; }
         public IWriterRepository Writers { get; }
+        public IMovieThumbRepository MovieThumbs { get; }
 
         public UnitOfWork(DVDRentalContext context)
         {
@@ -48,6 +49,7 @@ namespace DVDRentalAPI.Repository.Repository
             Stores = new StoreRepository(Context);
             Users = new UserRepository(Context);
             Writers = new WriterRepository(Context);
+            MovieThumbs = new MovieThumbRepository(Context);
         }
 
         public bool Commit()

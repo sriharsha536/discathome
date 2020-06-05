@@ -42,7 +42,7 @@ namespace DVDRentalAPI.Repository.Repository
             return _entities.Where(expression);
         }
 
-        public T Get(int id)
+        public T Get(int? id)
         {
             return _entities.Find(id);
         }

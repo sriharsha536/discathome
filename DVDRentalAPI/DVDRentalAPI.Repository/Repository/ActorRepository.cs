@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using DVDRentalAPI.Core.Model;
 using DVDRentalAPI.Repository.Interfaces;
 

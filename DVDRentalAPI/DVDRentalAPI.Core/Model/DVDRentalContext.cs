@@ -22,6 +22,7 @@ namespace DVDRentalAPI.Core.Model
         public virtual DbSet<Director> Director { get; set; }
         public virtual DbSet<Flights> Flights { get; set; }
         public virtual DbSet<Genre> Genre { get; set; }
+        public virtual DbSet<GetLatestByGenre> GetLatestByGenre { get; set; }
         public virtual DbSet<Inventory> Inventory { get; set; }
         public virtual DbSet<Language> Language { get; set; }
         public virtual DbSet<Media> Media { get; set; }
@@ -94,6 +95,13 @@ namespace DVDRentalAPI.Core.Model
                     .WithMany(p => p.Genre)
                     .HasForeignKey(d => d.MovieId)
                     .HasConstraintName("FK__Genre__Movie_Id__6EF57B66");
+            });
+
+            modelBuilder.Entity<GetLatestByGenre>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("GetLatestByGenre");
             });
 
             modelBuilder.Entity<Inventory>(entity =>

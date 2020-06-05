@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Logs\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DVDRentalAPI.Core\DVDRentalAPI.Core.csproj">
@@ -32,6 +33,11 @@
     <PackageReference Include="Auth0.AuthenticationApi" Version="7.0.7" />
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
   </ItemGroup>
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

@@ -7,9 +7,9 @@ Execute the commands in order to perform DB first approach and add models to you
 
 1. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 2. dotnet add package Microsoft.EntityFrameworkCore.Design
-3. dotnet ef dbcontext scaffold "Server=localhost,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=false;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "TMDbContext" -d
+3. dotnet ef dbcontext scaffold "Server=localhost,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=false;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "DVDRentalContext" -d
 
 To Update Models
 
-1. dotnet ef dbcontext scaffold "Server=localhost,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=false;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "TMDbContext" -d --force
+1. dotnet ef dbcontext scaffold "Server=localhost,1433;Database=OdeToCodeDB;User Id=sa;Password=<YourStrong@Passw0rd>;Trusted_Connection=false;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "DVDRentalContext" -d --force
 

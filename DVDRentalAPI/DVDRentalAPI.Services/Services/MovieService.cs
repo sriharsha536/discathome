@@ -20,6 +20,20 @@ namespace DVDRentalAPI.Services.Services
             _mapper = mapper;
         }
 
+        public MovieDetailModel GetMovieDetail(int movieId)
+        {
+            var movieDetailDto = _unitOfWork.Movies.GetMovieDetail(movieId);
+            var movieDetailModel = _mapper.Map<MovieDetailModel>(movieDetailDto);
+            return movieDetailModel;
+        }
+
+        public IEnumerable<MovieThumbModel> GetTopThumbsByGenre()
+        {
+            var movies = _unitOfWork.MovieThumbs.GetAll();
+            var movieThumbModel = _mapper.Map<IEnumerable<MovieThumbModel>>(movies);
+            return movieThumbModel;
+        }
+
         public IEnumerable<MovieSearchModel> SearchMovies(string matchingFilter)
         {
             var movies = _unitOfWork.Movies.Find(i => i.MovieName.Contains(matchingFilter));

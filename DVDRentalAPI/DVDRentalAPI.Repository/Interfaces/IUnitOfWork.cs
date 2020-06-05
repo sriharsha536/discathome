@@ -25,6 +25,7 @@ namespace DVDRentalAPI.Repository.Interfaces
         IStoreRepository Stores { get; }
         IUserRepository Users { get; }
         IWriterRepository Writers { get; }
+        IMovieThumbRepository MovieThumbs { get; }
 
         bool Commit();
     }

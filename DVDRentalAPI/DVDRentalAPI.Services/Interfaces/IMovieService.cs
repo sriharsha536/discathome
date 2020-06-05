@@ -8,5 +8,7 @@ namespace DVDRentalAPI.Services.Interfaces
     public interface IMovieService
     {
         IEnumerable<MovieSearchModel> SearchMovies(string matchingFilter);
+        IEnumerable<MovieThumbModel> GetTopThumbsByGenre();
+        MovieDetailModel GetMovieDetail(int movieId);
     }
 }

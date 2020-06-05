@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using AutoMapper;
 using DVDRentalAPI.Core.Model;
@@ -61,6 +62,10 @@ namespace DVDRentalAPI.Services
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
+                Subject = new ClaimsIdentity(new Claim[]
+                    {
+                        new Claim(ClaimTypes.Name, user.UserId.ToString())
+                    }),
                 Issuer = _appSettings.Issuer,
                 Audience = _appSettings.Audience,
                 Expires = DateTime.UtcNow.AddDays(7),

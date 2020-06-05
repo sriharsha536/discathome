@@ -6,7 +6,7 @@ namespace DVDRentalAPI.Repository.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {
-        T Get(int id);
+        T Get(int? id);
 
         IEnumerable<T> GetAll();
 

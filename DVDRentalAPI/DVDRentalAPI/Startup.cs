@@ -3,6 +3,7 @@ using System.Text;
 using AutoMapper;
 using DVDRentalAPI.Core.Model;
 using DVDRentalAPI.Helpers;
+using DVDRentalAPI.Helpers.Extensions;
 using DVDRentalAPI.Repository.Interfaces;
 using DVDRentalAPI.Repository.Repository;
 using DVDRentalAPI.Services;
@@ -86,6 +87,7 @@ namespace DVDRentalAPI
             services.AddScoped<IStoreRepository, StoreRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IWriterRepository, WriterRepository>();
+            services.AddScoped<IMovieThumbRepository, MovieThumbRepository>();
 
 
             // configure DI for application services
@@ -94,6 +96,9 @@ namespace DVDRentalAPI
             services.AddScoped<ICSCService, CSCService>();
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<IUploadService, UploadService>();
+
+            //HttpContext Accessor
+            services.AddHttpContextAccessor();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -103,6 +108,8 @@ namespace DVDRentalAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseExceptionMiddleware();
 
             app.UseHttpsRedirection();
 
@@ -121,6 +128,8 @@ namespace DVDRentalAPI
             {
                 endpoints.MapControllers();
             });
+
+            app.UseRequestResponseLogging();
         }
     }
 }
